@@ -121,4 +121,19 @@
   <data name="IMG_2114" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_2114.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ali-abdul-rahman-JOgQUlO6JXU-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ali-abdul-rahman-JOgQUlO6JXU-unsplash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Customer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ashim-d-silva-pGcqw1ARGyg-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ashim-d-silva-pGcqw1ARGyg-unsplash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruedi-haberli-bG6Kdxbvgg0-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruedi-haberli-bG6Kdxbvgg0-unsplash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

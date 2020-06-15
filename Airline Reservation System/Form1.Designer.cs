@@ -42,6 +42,7 @@
             this.signInButton = new System.Windows.Forms.Button();
             this.signUpButton = new System.Windows.Forms.Button();
             this.selectorPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.customerButton = new System.Windows.Forms.Button();
             this.customerPicture = new System.Windows.Forms.PictureBox();
             this.adminPicture = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.adminLink = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.signInPanel.SuspendLayout();
             this.selectorPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicture)).BeginInit();
@@ -217,6 +217,17 @@
             this.selectorPanel.Size = new System.Drawing.Size(616, 645);
             this.selectorPanel.TabIndex = 13;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(246, 569);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 46);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Admin";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // customerButton
             // 
             this.customerButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -230,7 +241,7 @@
             // 
             // customerPicture
             // 
-            this.customerPicture.Image = global::Airline_Reservation_System.Properties.Resources.Customer;
+            this.customerPicture.BackgroundImage = global::Airline_Reservation_System.Properties.Resources.Customer;
             this.customerPicture.Location = new System.Drawing.Point(330, 290);
             this.customerPicture.Name = "customerPicture";
             this.customerPicture.Size = new System.Drawing.Size(193, 197);
@@ -241,7 +252,7 @@
             // 
             // adminPicture
             // 
-            this.adminPicture.Image = global::Airline_Reservation_System.Properties.Resources._31;
+            this.adminPicture.Image = global::Airline_Reservation_System.Properties.Resources._3;
             this.adminPicture.Location = new System.Drawing.Point(79, 293);
             this.adminPicture.Name = "adminPicture";
             this.adminPicture.Size = new System.Drawing.Size(193, 197);
@@ -293,17 +304,6 @@
             this.adminLink.Text = "Admin";
             this.adminLink.UseVisualStyleBackColor = true;
             this.adminLink.Click += new System.EventHandler(this.adminLink_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(246, 569);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 46);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Admin";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 

@@ -63,9 +63,59 @@ namespace Airline_Reservation_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3 {
+            get {
+                object obj = ResourceManager.GetObject("3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ali_abdul_rahman_JOgQUlO6JXU_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("ali-abdul-rahman-JOgQUlO6JXU-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ashim_d_silva_pGcqw1ARGyg_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("ashim-d-silva-pGcqw1ARGyg-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Customer {
+            get {
+                object obj = ResourceManager.GetObject("Customer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_2114 {
             get {
                 object obj = ResourceManager.GetObject("IMG_2114", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ruedi_haberli_bG6Kdxbvgg0_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("ruedi-haberli-bG6Kdxbvgg0-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

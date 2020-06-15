@@ -22,5 +22,30 @@ namespace Airline_Reservation_System
             new Airport().Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
