@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.exitBtn = new System.Windows.Forms.Button();
@@ -40,49 +40,65 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.backBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.flightButton = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.airplaneImage = new System.Windows.Forms.PictureBox();
+            this.airplaneButton = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.viewCarGrid = new System.Windows.Forms.DataGridView();
+            this.tableNameHeader = new System.Windows.Forms.Label();
+            this.viewGrid = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CAR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrival = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.deleteButton = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.NameC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.company = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CAR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deletePanel = new System.Windows.Forms.Panel();
+            this.deleteIDTextBox = new System.Windows.Forms.TextBox();
+            this.deletePromptLabel = new System.Windows.Forms.Label();
+            this.deleteButtonCon = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.newValueBox = new System.Windows.Forms.TextBox();
+            this.selectAttribute = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.airplaneImage)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewCarGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewGrid)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.deletePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -187,6 +203,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(46)))), ((int)(((byte)(81)))));
+            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel7);
@@ -198,17 +215,17 @@
             this.panel1.Size = new System.Drawing.Size(201, 875);
             this.panel1.TabIndex = 43;
             // 
-            // panel4
+            // panel10
             // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Location = new System.Drawing.Point(0, 571);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(201, 195);
-            this.panel4.TabIndex = 41;
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.Controls.Add(this.pictureBox3);
+            this.panel10.Controls.Add(this.flightButton);
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel10.Location = new System.Drawing.Point(0, 538);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(201, 115);
+            this.panel10.TabIndex = 42;
             // 
             // pictureBox3
             // 
@@ -218,24 +235,66 @@
             this.pictureBox3.Location = new System.Drawing.Point(39, 12);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(104, 108);
+            this.pictureBox3.Size = new System.Drawing.Size(104, 58);
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
             // 
-            // label1
+            // flightButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(40, 142);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 27);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Flights";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.flightButton.AutoSize = true;
+            this.flightButton.BackColor = System.Drawing.Color.Transparent;
+            this.flightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.flightButton.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flightButton.ForeColor = System.Drawing.Color.White;
+            this.flightButton.Location = new System.Drawing.Point(40, 75);
+            this.flightButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.flightButton.Name = "flightButton";
+            this.flightButton.Size = new System.Drawing.Size(95, 27);
+            this.flightButton.TabIndex = 30;
+            this.flightButton.Text = "Flights";
+            this.flightButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.flightButton.Click += new System.EventHandler(this.flightButton_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.airplaneImage);
+            this.panel4.Controls.Add(this.airplaneButton);
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel4.Location = new System.Drawing.Point(0, 422);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(201, 115);
+            this.panel4.TabIndex = 41;
+            // 
+            // airplaneImage
+            // 
+            this.airplaneImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("airplaneImage.BackgroundImage")));
+            this.airplaneImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.airplaneImage.Enabled = false;
+            this.airplaneImage.Location = new System.Drawing.Point(39, 12);
+            this.airplaneImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.airplaneImage.Name = "airplaneImage";
+            this.airplaneImage.Size = new System.Drawing.Size(104, 58);
+            this.airplaneImage.TabIndex = 29;
+            this.airplaneImage.TabStop = false;
+            this.airplaneImage.Click += new System.EventHandler(this.airplaneImage_Click);
+            // 
+            // airplaneButton
+            // 
+            this.airplaneButton.AutoSize = true;
+            this.airplaneButton.BackColor = System.Drawing.Color.Transparent;
+            this.airplaneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.airplaneButton.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.airplaneButton.ForeColor = System.Drawing.Color.White;
+            this.airplaneButton.Location = new System.Drawing.Point(40, 75);
+            this.airplaneButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.airplaneButton.Name = "airplaneButton";
+            this.airplaneButton.Size = new System.Drawing.Size(128, 27);
+            this.airplaneButton.TabIndex = 30;
+            this.airplaneButton.Text = "Airplanes";
+            this.airplaneButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.airplaneButton.Click += new System.EventHandler(this.airplaneButton_Click);
             // 
             // panel5
             // 
@@ -243,10 +302,10 @@
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel5.Location = new System.Drawing.Point(0, 388);
+            this.panel5.Location = new System.Drawing.Point(0, 316);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(201, 183);
+            this.panel5.Size = new System.Drawing.Size(201, 109);
             this.panel5.TabIndex = 40;
             // 
             // pictureBox4
@@ -257,9 +316,10 @@
             this.pictureBox4.Location = new System.Drawing.Point(39, 12);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(104, 108);
+            this.pictureBox4.Size = new System.Drawing.Size(104, 57);
             this.pictureBox4.TabIndex = 29;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label5
             // 
@@ -268,13 +328,14 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(40, 142);
+            this.label5.Location = new System.Drawing.Point(46, 74);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 27);
             this.label5.TabIndex = 30;
             this.label5.Text = "Airline";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel7
             // 
@@ -285,7 +346,7 @@
             this.panel7.Location = new System.Drawing.Point(0, 205);
             this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(201, 185);
+            this.panel7.Size = new System.Drawing.Size(201, 116);
             this.panel7.TabIndex = 39;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -297,9 +358,10 @@
             this.pictureBox5.Location = new System.Drawing.Point(39, 12);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(104, 108);
+            this.pictureBox5.Size = new System.Drawing.Size(104, 50);
             this.pictureBox5.TabIndex = 29;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label6
             // 
@@ -308,220 +370,107 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(40, 142);
+            this.label6.Location = new System.Drawing.Point(46, 67);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 27);
             this.label6.TabIndex = 30;
             this.label6.Text = "Airport";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label4
+            // tableNameHeader
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(358, 138);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 55);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Airport";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.tableNameHeader.AutoSize = true;
+            this.tableNameHeader.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableNameHeader.ForeColor = System.Drawing.Color.Black;
+            this.tableNameHeader.Location = new System.Drawing.Point(358, 138);
+            this.tableNameHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tableNameHeader.Name = "tableNameHeader";
+            this.tableNameHeader.Size = new System.Drawing.Size(150, 55);
+            this.tableNameHeader.TabIndex = 45;
+            this.tableNameHeader.Text = "Airport";
+            this.tableNameHeader.Click += new System.EventHandler(this.tableNameHeader_Click);
             // 
-            // viewCarGrid
+            // viewGrid
             // 
-            this.viewCarGrid.AllowUserToAddRows = false;
-            this.viewCarGrid.AllowUserToDeleteRows = false;
-            this.viewCarGrid.AllowUserToResizeColumns = false;
-            this.viewCarGrid.AllowUserToResizeRows = false;
-            this.viewCarGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.viewCarGrid.BackgroundColor = System.Drawing.Color.White;
-            this.viewCarGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.viewCarGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewCarGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.viewCarGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.viewCarGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NameC,
-            this.Model,
-            this.company,
-            this.Price,
+            this.viewGrid.AllowUserToAddRows = false;
+            this.viewGrid.AllowUserToDeleteRows = false;
+            this.viewGrid.AllowUserToResizeColumns = false;
+            this.viewGrid.AllowUserToResizeRows = false;
+            this.viewGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.viewGrid.BackgroundColor = System.Drawing.Color.White;
+            this.viewGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.viewGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.viewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.NameCol,
+            this.City,
+            this.Country,
             this.Status,
-            this.CAR_ID});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewCarGrid.DefaultCellStyle = dataGridViewCellStyle2;
-            this.viewCarGrid.EnableHeadersVisualStyles = false;
-            this.viewCarGrid.GridColor = System.Drawing.Color.White;
-            this.viewCarGrid.Location = new System.Drawing.Point(201, 228);
-            this.viewCarGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.viewCarGrid.Name = "viewCarGrid";
-            this.viewCarGrid.ReadOnly = true;
-            this.viewCarGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.viewCarGrid.RowHeadersVisible = false;
-            this.viewCarGrid.RowHeadersWidth = 62;
-            this.viewCarGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.viewCarGrid.Size = new System.Drawing.Size(1318, 480);
-            this.viewCarGrid.TabIndex = 42;
+            this.CAR_ID,
+            this.arrival,
+            this.departure});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            this.viewGrid.EnableHeadersVisualStyles = false;
+            this.viewGrid.GridColor = System.Drawing.Color.White;
+            this.viewGrid.Location = new System.Drawing.Point(201, 272);
+            this.viewGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.viewGrid.Name = "viewGrid";
+            this.viewGrid.ReadOnly = true;
+            this.viewGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.viewGrid.RowHeadersVisible = false;
+            this.viewGrid.RowHeadersWidth = 62;
+            this.viewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.viewGrid.Size = new System.Drawing.Size(1318, 436);
+            this.viewGrid.TabIndex = 42;
+            this.viewGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewCarGrid_CellContentClick);
             // 
-            // panel8
+            // ID
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Location = new System.Drawing.Point(615, 712);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(146, 140);
-            this.panel8.TabIndex = 50;
+            this.ID.HeaderText = "Airport_ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
-            // pictureBox6
+            // NameCol
             // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox6.Enabled = false;
-            this.pictureBox6.Location = new System.Drawing.Point(27, 5);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(87, 89);
-            this.pictureBox6.TabIndex = 29;
-            this.pictureBox6.TabStop = false;
+            this.NameCol.HeaderText = "Airport_Name";
+            this.NameCol.MinimumWidth = 8;
+            this.NameCol.Name = "NameCol";
+            this.NameCol.ReadOnly = true;
             // 
-            // label7
+            // City
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(22, 98);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 27);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "  Add";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.City.HeaderText = "City";
+            this.City.MinimumWidth = 8;
+            this.City.Name = "City";
+            this.City.ReadOnly = true;
             // 
-            // panel6
+            // Country
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel6.Controls.Add(this.pictureBox7);
-            this.panel6.Controls.Add(this.label8);
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(915, 712);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(146, 140);
-            this.panel6.TabIndex = 51;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Enabled = false;
-            this.pictureBox7.Location = new System.Drawing.Point(27, 5);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(87, 89);
-            this.pictureBox7.TabIndex = 29;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(22, 98);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 27);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Delete";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel9.Location = new System.Drawing.Point(760, 712);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(146, 140);
-            this.panel9.TabIndex = 51;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox8.Enabled = false;
-            this.pictureBox8.Location = new System.Drawing.Point(27, 5);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(87, 89);
-            this.pictureBox8.TabIndex = 29;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(22, 98);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 27);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "   Edit";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // NameC
-            // 
-            this.NameC.HeaderText = "Name";
-            this.NameC.MinimumWidth = 8;
-            this.NameC.Name = "NameC";
-            this.NameC.ReadOnly = true;
-            // 
-            // Model
-            // 
-            this.Model.HeaderText = "Model";
-            this.Model.MinimumWidth = 8;
-            this.Model.Name = "Model";
-            this.Model.ReadOnly = true;
-            // 
-            // company
-            // 
-            this.company.HeaderText = "Company";
-            this.company.MinimumWidth = 8;
-            this.company.Name = "company";
-            this.company.ReadOnly = true;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Location";
-            this.Price.MinimumWidth = 8;
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
+            this.Country.HeaderText = "Country";
+            this.Country.MinimumWidth = 8;
+            this.Country.Name = "Country";
+            this.Country.ReadOnly = true;
             // 
             // Status
             // 
@@ -536,7 +485,221 @@
             this.CAR_ID.MinimumWidth = 8;
             this.CAR_ID.Name = "CAR_ID";
             this.CAR_ID.ReadOnly = true;
-            this.CAR_ID.Visible = false;
+            // 
+            // arrival
+            // 
+            this.arrival.HeaderText = "Arrival";
+            this.arrival.MinimumWidth = 8;
+            this.arrival.Name = "arrival";
+            this.arrival.ReadOnly = true;
+            // 
+            // departure
+            // 
+            this.departure.HeaderText = "Column1";
+            this.departure.MinimumWidth = 8;
+            this.departure.Name = "departure";
+            this.departure.ReadOnly = true;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel8.Location = new System.Drawing.Point(615, 712);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(146, 94);
+            this.panel8.TabIndex = 50;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.Enabled = false;
+            this.pictureBox6.Location = new System.Drawing.Point(27, 5);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(87, 47);
+            this.pictureBox6.TabIndex = 29;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(22, 57);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 27);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "  Add";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel6.Controls.Add(this.pictureBox7);
+            this.panel6.Controls.Add(this.deleteButton);
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel6.Location = new System.Drawing.Point(903, 712);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(140, 94);
+            this.panel6.TabIndex = 51;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox7.Enabled = false;
+            this.pictureBox7.Location = new System.Drawing.Point(27, 5);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(87, 47);
+            this.pictureBox7.TabIndex = 29;
+            this.pictureBox7.TabStop = false;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.AutoSize = true;
+            this.deleteButton.BackColor = System.Drawing.Color.Transparent;
+            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.ForeColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(22, 57);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(91, 27);
+            this.deleteButton.TabIndex = 30;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel9.Controls.Add(this.pictureBox8);
+            this.panel9.Controls.Add(this.label9);
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel9.Location = new System.Drawing.Point(760, 712);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(146, 94);
+            this.panel9.TabIndex = 51;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox8.Enabled = false;
+            this.pictureBox8.Location = new System.Drawing.Point(27, 5);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(87, 47);
+            this.pictureBox8.TabIndex = 29;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(22, 57);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(84, 27);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "   Edit";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // deletePanel
+            // 
+            this.deletePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.deletePanel.Controls.Add(this.selectAttribute);
+            this.deletePanel.Controls.Add(this.newValueBox);
+            this.deletePanel.Controls.Add(this.label1);
+            this.deletePanel.Controls.Add(this.deleteButtonCon);
+            this.deletePanel.Controls.Add(this.deletePromptLabel);
+            this.deletePanel.Controls.Add(this.deleteIDTextBox);
+            this.deletePanel.Location = new System.Drawing.Point(202, 208);
+            this.deletePanel.Name = "deletePanel";
+            this.deletePanel.Size = new System.Drawing.Size(1318, 59);
+            this.deletePanel.TabIndex = 53;
+            // 
+            // deleteIDTextBox
+            // 
+            this.deleteIDTextBox.Location = new System.Drawing.Point(278, 17);
+            this.deleteIDTextBox.Name = "deleteIDTextBox";
+            this.deleteIDTextBox.Size = new System.Drawing.Size(259, 26);
+            this.deleteIDTextBox.TabIndex = 54;
+            // 
+            // deletePromptLabel
+            // 
+            this.deletePromptLabel.AutoSize = true;
+            this.deletePromptLabel.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.deletePromptLabel.ForeColor = System.Drawing.Color.White;
+            this.deletePromptLabel.Location = new System.Drawing.Point(233, 16);
+            this.deletePromptLabel.Name = "deletePromptLabel";
+            this.deletePromptLabel.Size = new System.Drawing.Size(39, 27);
+            this.deletePromptLabel.TabIndex = 54;
+            this.deletePromptLabel.Text = "ID";
+            // 
+            // deleteButtonCon
+            // 
+            this.deleteButtonCon.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.deleteButtonCon.ForeColor = System.Drawing.Color.Black;
+            this.deleteButtonCon.Location = new System.Drawing.Point(1081, 6);
+            this.deleteButtonCon.Name = "deleteButtonCon";
+            this.deleteButtonCon.Size = new System.Drawing.Size(104, 50);
+            this.deleteButtonCon.TabIndex = 55;
+            this.deleteButtonCon.Text = "Delete";
+            this.deleteButtonCon.UseVisualStyleBackColor = true;
+            this.deleteButtonCon.Click += new System.EventHandler(this.deleteButtonCon_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(565, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 27);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "New Value";
+            // 
+            // newValueBox
+            // 
+            this.newValueBox.Location = new System.Drawing.Point(728, 14);
+            this.newValueBox.Name = "newValueBox";
+            this.newValueBox.Size = new System.Drawing.Size(312, 26);
+            this.newValueBox.TabIndex = 57;
+            // 
+            // selectAttribute
+            // 
+            this.selectAttribute.FormattingEnabled = true;
+            this.selectAttribute.Location = new System.Drawing.Point(23, 18);
+            this.selectAttribute.Name = "selectAttribute";
+            this.selectAttribute.Size = new System.Drawing.Size(191, 28);
+            this.selectAttribute.TabIndex = 58;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(564, 141);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(156, 55);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Update";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // Dashboard
             // 
@@ -544,6 +707,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1522, 875);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.deletePanel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -551,8 +716,8 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.viewCarGrid);
+            this.Controls.Add(this.tableNameHeader);
+            this.Controls.Add(this.viewGrid);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
@@ -563,16 +728,19 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.airplaneImage)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewCarGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewGrid)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -582,6 +750,8 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.deletePanel.ResumeLayout(false);
+            this.deletePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -598,11 +768,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView viewCarGrid;
+        private System.Windows.Forms.Label tableNameHeader;
+        private System.Windows.Forms.DataGridView viewGrid;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox airplaneImage;
+        private System.Windows.Forms.Label airplaneButton;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label5;
@@ -614,15 +784,28 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label deleteButton;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Model;
-        private System.Windows.Forms.DataGridViewTextBoxColumn company;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn City;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Country;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn CAR_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn arrival;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departure;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label flightButton;
+        private System.Windows.Forms.Panel deletePanel;
+        private System.Windows.Forms.Button deleteButtonCon;
+        private System.Windows.Forms.Label deletePromptLabel;
+        private System.Windows.Forms.TextBox deleteIDTextBox;
+        private System.Windows.Forms.ComboBox selectAttribute;
+        private System.Windows.Forms.TextBox newValueBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }
