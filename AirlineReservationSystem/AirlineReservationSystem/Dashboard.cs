@@ -20,7 +20,7 @@ namespace AirlineReservationSystem
         public Dashboard()
         {
             InitializeComponent();
-            populateGrid();
+            //populateGrid();
             this.selectAttribute.Visible = false;
             this.label1.Visible = false;
             this.newValueBox.Visible = false;
