@@ -20,7 +20,7 @@ namespace AirlineReservationSystem
         public Dashboard()
         {
             InitializeComponent();
-            //populateGrid();
+            populateGrid();
             this.selectAttribute.Visible = false;
             this.label1.Visible = false;
             this.newValueBox.Visible = false;
@@ -288,7 +288,14 @@ namespace AirlineReservationSystem
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            
+            this.selectAttribute.Visible = false;
+            this.label1.Visible = false;
+            this.newValueBox.Visible = false;
+            this.deleteIDTextBox.Visible = true;
+            this.deletePromptLabel.Visible = true;
+            this.deleteButtonCon.Visible = true;
+            this.deleteButtonCon.Text = "Delete";
+            flagForDeleteUpdate = "Delete";
         }
 
         private void deleteButtonCon_Click(object sender, EventArgs e)
@@ -308,11 +315,28 @@ namespace AirlineReservationSystem
             setID();
             con.Open();
             string valueTo = deleteIDTextBox.Text;
-            
-            SqlCommand cmd = new SqlCommand("delete from "+flag+" where "+id+"=@a", con);
-            cmd.Parameters.AddWithValue("@a", valueTo);
-            cmd.ExecuteNonQuery();
-
+            if (flag=="AIRLINE")
+            {
+                SqlCommand cmd1 = new SqlCommand("Select Airplane_ID from AIRPLANE where Airline_ID=@a", con);
+                cmd1.Parameters.AddWithValue("@a", valueTo);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd1);
+                DataSet ds1 = new DataSet();
+                adapter.Fill(ds1);
+                for (int i = 0; i < ds1.Tables[0].Rows.Count; i++)
+                {
+                    string found = ds1.Tables[0].Rows[i].ItemArray[0].ToString();
+                    SqlCommand cmd3 = new SqlCommand("delete from  FLIGHT  where Airplane_ID=@aaa", con);
+                    cmd3.Parameters.AddWithValue("@aaa", found);
+                    cmd3.ExecuteNonQuery();
+                    SqlCommand cmd4 = new SqlCommand("delete from  Airplane  where Airplane_ID=@aa1", con);
+                    cmd4.Parameters.AddWithValue("@aa1", found);
+                    cmd4.ExecuteNonQuery();
+                }
+                MessageBox.Show("Deleted");
+                SqlCommand cmd = new SqlCommand("delete from " + flag + " where " + id + "=@a", con);
+                cmd.Parameters.AddWithValue("@a", valueTo);
+                cmd.ExecuteNonQuery();
+            }
             MessageBox.Show("Deleted");
             con.Close();
             populateGrid();
@@ -380,20 +404,8 @@ namespace AirlineReservationSystem
             con.Close();
             populateGrid();
         }
-      
-        private void tableNameHeader_Click(object sender, EventArgs e)
-        {
-            this.selectAttribute.Visible = false;
-            this.label1.Visible = false;
-            this.newValueBox.Visible = false;
-            this.deleteIDTextBox.Visible = true;
-            this.deletePromptLabel.Visible = true;
-            this.deleteButtonCon.Visible = true;
-            this.deleteButtonCon.Text = "Delete";
-            flagForDeleteUpdate = "Delete";
-        }
 
-        private void label4_Click_1(object sender, EventArgs e)
+        private void label9_Click(object sender, EventArgs e)
         {
             setID();
             this.selectAttribute.Visible = true;
