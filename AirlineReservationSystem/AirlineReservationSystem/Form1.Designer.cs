@@ -31,30 +31,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.NameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deletePromptLabel = new System.Windows.Forms.Label();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CAR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrival = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.deleteButton = new System.Windows.Forms.Label();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.deletePanel = new System.Windows.Forms.Panel();
             this.selectAttribute = new System.Windows.Forms.ComboBox();
             this.newValueBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteButtonCon = new System.Windows.Forms.Button();
-            this.deletePromptLabel = new System.Windows.Forms.Label();
             this.deleteIDTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.arrival = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.NameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.deleteButton = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -77,15 +76,15 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tableNameHeader = new System.Windows.Forms.Label();
             this.viewGrid = new System.Windows.Forms.DataGridView();
-            this.panel8.SuspendLayout();
+            this.tableNameHeader = new System.Windows.Forms.Label();
+            this.deletePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.deletePanel.SuspendLayout();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -101,12 +100,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.viewGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // NameCol
+            // deletePromptLabel
             // 
-            this.NameCol.HeaderText = "Airport_Name";
-            this.NameCol.MinimumWidth = 8;
-            this.NameCol.Name = "NameCol";
-            this.NameCol.ReadOnly = true;
+            this.deletePromptLabel.AutoSize = true;
+            this.deletePromptLabel.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.deletePromptLabel.ForeColor = System.Drawing.Color.White;
+            this.deletePromptLabel.Location = new System.Drawing.Point(155, 10);
+            this.deletePromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.deletePromptLabel.Name = "deletePromptLabel";
+            this.deletePromptLabel.Size = new System.Drawing.Size(26, 18);
+            this.deletePromptLabel.TabIndex = 54;
+            this.deletePromptLabel.Text = "ID";
+            // 
+            // City
+            // 
+            this.City.HeaderText = "City";
+            this.City.MinimumWidth = 8;
+            this.City.Name = "City";
+            this.City.ReadOnly = true;
             // 
             // Country
             // 
@@ -129,135 +140,6 @@
             this.CAR_ID.Name = "CAR_ID";
             this.CAR_ID.ReadOnly = true;
             // 
-            // arrival
-            // 
-            this.arrival.HeaderText = "Arrival";
-            this.arrival.MinimumWidth = 8;
-            this.arrival.Name = "arrival";
-            this.arrival.ReadOnly = true;
-            // 
-            // departure
-            // 
-            this.departure.HeaderText = "Column1";
-            this.departure.MinimumWidth = 8;
-            this.departure.Name = "departure";
-            this.departure.ReadOnly = true;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Location = new System.Drawing.Point(410, 463);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(97, 61);
-            this.panel8.TabIndex = 61;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox6.Enabled = false;
-            this.pictureBox6.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(58, 31);
-            this.pictureBox6.TabIndex = 29;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(15, 37);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 18);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "  Add";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel6.Controls.Add(this.pictureBox7);
-            this.panel6.Controls.Add(this.deleteButton);
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(602, 463);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(93, 61);
-            this.panel6.TabIndex = 62;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Enabled = false;
-            this.pictureBox7.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(58, 31);
-            this.pictureBox7.TabIndex = 29;
-            this.pictureBox7.TabStop = false;
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.AutoSize = true;
-            this.deleteButton.BackColor = System.Drawing.Color.Transparent;
-            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(15, 37);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(58, 18);
-            this.deleteButton.TabIndex = 30;
-            this.deleteButton.Text = "Delete";
-            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // City
-            // 
-            this.City.HeaderText = "City";
-            this.City.MinimumWidth = 8;
-            this.City.Name = "City";
-            this.City.ReadOnly = true;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel9.Location = new System.Drawing.Point(507, 463);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(97, 61);
-            this.panel9.TabIndex = 63;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox8.Enabled = false;
-            this.pictureBox8.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(58, 31);
-            this.pictureBox8.TabIndex = 29;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(15, 37);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 18);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "   Edit";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // deletePanel
             // 
             this.deletePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
@@ -271,7 +153,7 @@
             this.deletePanel.Margin = new System.Windows.Forms.Padding(2);
             this.deletePanel.Name = "deletePanel";
             this.deletePanel.Size = new System.Drawing.Size(879, 38);
-            this.deletePanel.TabIndex = 64;
+            this.deletePanel.TabIndex = 63;
             // 
             // selectAttribute
             // 
@@ -314,18 +196,6 @@
             this.deleteButtonCon.Text = "Delete";
             this.deleteButtonCon.UseVisualStyleBackColor = true;
             // 
-            // deletePromptLabel
-            // 
-            this.deletePromptLabel.AutoSize = true;
-            this.deletePromptLabel.Font = new System.Drawing.Font("Lucida Fax", 12F);
-            this.deletePromptLabel.ForeColor = System.Drawing.Color.White;
-            this.deletePromptLabel.Location = new System.Drawing.Point(155, 10);
-            this.deletePromptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.deletePromptLabel.Name = "deletePromptLabel";
-            this.deletePromptLabel.Size = new System.Drawing.Size(26, 18);
-            this.deletePromptLabel.TabIndex = 54;
-            this.deletePromptLabel.Text = "ID";
-            // 
             // deleteIDTextBox
             // 
             this.deleteIDTextBox.Location = new System.Drawing.Point(185, 11);
@@ -334,16 +204,134 @@
             this.deleteIDTextBox.Size = new System.Drawing.Size(174, 20);
             this.deleteIDTextBox.TabIndex = 54;
             // 
-            // label4
+            // arrival
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(376, 92);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 37);
-            this.label4.TabIndex = 65;
-            this.label4.Text = "Update";
+            this.arrival.HeaderText = "Arrival";
+            this.arrival.MinimumWidth = 8;
+            this.arrival.Name = "arrival";
+            this.arrival.ReadOnly = true;
+            // 
+            // departure
+            // 
+            this.departure.HeaderText = "Column1";
+            this.departure.MinimumWidth = 8;
+            this.departure.Name = "departure";
+            this.departure.ReadOnly = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.Enabled = false;
+            this.pictureBox6.Location = new System.Drawing.Point(18, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(58, 31);
+            this.pictureBox6.TabIndex = 29;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(15, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 18);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "  Add";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // NameCol
+            // 
+            this.NameCol.HeaderText = "Airport_Name";
+            this.NameCol.MinimumWidth = 8;
+            this.NameCol.Name = "NameCol";
+            this.NameCol.ReadOnly = true;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel6.Controls.Add(this.pictureBox7);
+            this.panel6.Controls.Add(this.deleteButton);
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel6.Location = new System.Drawing.Point(602, 463);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(93, 61);
+            this.panel6.TabIndex = 61;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox7.Enabled = false;
+            this.pictureBox7.Location = new System.Drawing.Point(18, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(58, 31);
+            this.pictureBox7.TabIndex = 29;
+            this.pictureBox7.TabStop = false;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.AutoSize = true;
+            this.deleteButton.BackColor = System.Drawing.Color.Transparent;
+            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.ForeColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(15, 37);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(58, 18);
+            this.deleteButton.TabIndex = 30;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel9.Controls.Add(this.pictureBox8);
+            this.panel9.Controls.Add(this.label9);
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel9.Location = new System.Drawing.Point(507, 463);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(97, 61);
+            this.panel9.TabIndex = 62;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox8.Enabled = false;
+            this.pictureBox8.Location = new System.Drawing.Point(18, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(58, 31);
+            this.pictureBox8.TabIndex = 29;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(15, 37);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 18);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "   Edit";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel8.Location = new System.Drawing.Point(410, 463);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(97, 61);
+            this.panel8.TabIndex = 60;
             // 
             // ID
             // 
@@ -359,7 +347,7 @@
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 60;
+            this.pictureBox2.TabIndex = 59;
             this.pictureBox2.TabStop = false;
             // 
             // panel3
@@ -367,8 +355,8 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.panel3.Location = new System.Drawing.Point(134, 130);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(779, 5);
-            this.panel3.TabIndex = 59;
+            this.panel3.Size = new System.Drawing.Size(880, 5);
+            this.panel3.TabIndex = 58;
             // 
             // label2
             // 
@@ -427,7 +415,7 @@
             this.panel2.Location = new System.Drawing.Point(134, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(880, 83);
-            this.panel2.TabIndex = 57;
+            this.panel2.TabIndex = 56;
             // 
             // backBtn
             // 
@@ -454,8 +442,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(134, 532);
-            this.panel1.TabIndex = 56;
+            this.panel1.Size = new System.Drawing.Size(134, 535);
+            this.panel1.TabIndex = 55;
             // 
             // panel10
             // 
@@ -601,17 +589,6 @@
             this.label6.Text = "Airport";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableNameHeader
-            // 
-            this.tableNameHeader.AutoSize = true;
-            this.tableNameHeader.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableNameHeader.ForeColor = System.Drawing.Color.Black;
-            this.tableNameHeader.Location = new System.Drawing.Point(239, 90);
-            this.tableNameHeader.Name = "tableNameHeader";
-            this.tableNameHeader.Size = new System.Drawing.Size(100, 37);
-            this.tableNameHeader.TabIndex = 58;
-            this.tableNameHeader.Text = "Airport";
-            // 
             // viewGrid
             // 
             this.viewGrid.AllowUserToAddRows = false;
@@ -660,31 +637,41 @@
             this.viewGrid.RowHeadersWidth = 62;
             this.viewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.viewGrid.Size = new System.Drawing.Size(880, 283);
-            this.viewGrid.TabIndex = 55;
+            this.viewGrid.TabIndex = 54;
+            // 
+            // tableNameHeader
+            // 
+            this.tableNameHeader.AutoSize = true;
+            this.tableNameHeader.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableNameHeader.ForeColor = System.Drawing.Color.Black;
+            this.tableNameHeader.Location = new System.Drawing.Point(239, 90);
+            this.tableNameHeader.Name = "tableNameHeader";
+            this.tableNameHeader.Size = new System.Drawing.Size(100, 37);
+            this.tableNameHeader.TabIndex = 57;
+            this.tableNameHeader.Text = "Airport";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1015, 532);
-            this.Controls.Add(this.panel8);
+            this.ClientSize = new System.Drawing.Size(1015, 535);
+            this.Controls.Add(this.deletePanel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.deletePanel);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.tableNameHeader);
             this.Controls.Add(this.viewGrid);
+            this.Controls.Add(this.tableNameHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.deletePanel.ResumeLayout(false);
+            this.deletePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -692,8 +679,8 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.deletePanel.ResumeLayout(false);
-            this.deletePanel.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -719,30 +706,29 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameCol;
+        private System.Windows.Forms.Label deletePromptLabel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn City;
         private System.Windows.Forms.DataGridViewTextBoxColumn Country;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn CAR_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn arrival;
-        private System.Windows.Forms.DataGridViewTextBoxColumn departure;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label deleteButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn City;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel deletePanel;
         private System.Windows.Forms.ComboBox selectAttribute;
         private System.Windows.Forms.TextBox newValueBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button deleteButtonCon;
-        private System.Windows.Forms.Label deletePromptLabel;
         private System.Windows.Forms.TextBox deleteIDTextBox;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn arrival;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departure;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameCol;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label deleteButton;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
@@ -765,7 +751,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label tableNameHeader;
         private System.Windows.Forms.DataGridView viewGrid;
+        private System.Windows.Forms.Label tableNameHeader;
     }
 }
