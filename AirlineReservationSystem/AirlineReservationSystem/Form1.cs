@@ -58,5 +58,10 @@ namespace AirlineReservationSystem
             new Dashboard().Show();
             this.Hide();
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

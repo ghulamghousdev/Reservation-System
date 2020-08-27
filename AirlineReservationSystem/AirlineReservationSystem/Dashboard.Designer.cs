@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.exitBtn = new System.Windows.Forms.Button();
@@ -136,13 +136,14 @@
             this.exitBtn.TabIndex = 37;
             this.exitBtn.Text = "X";
             this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(74)))), ((int)(((byte)(82)))));
-            this.label2.Location = new System.Drawing.Point(508, 69);
+            this.label2.Location = new System.Drawing.Point(445, 80);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(313, 36);
@@ -152,7 +153,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(248, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(153, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 111);
@@ -164,7 +165,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(74)))), ((int)(((byte)(82)))));
-            this.label3.Location = new System.Drawing.Point(432, 18);
+            this.label3.Location = new System.Drawing.Point(356, 19);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(548, 50);
@@ -211,7 +212,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 875);
+            this.panel1.Size = new System.Drawing.Size(201, 830);
             this.panel1.TabIndex = 43;
             // 
             // panel10
@@ -383,7 +384,7 @@
             this.tableNameHeader.AutoSize = true;
             this.tableNameHeader.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableNameHeader.ForeColor = System.Drawing.Color.Black;
-            this.tableNameHeader.Location = new System.Drawing.Point(358, 138);
+            this.tableNameHeader.Location = new System.Drawing.Point(724, 133);
             this.tableNameHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tableNameHeader.Name = "tableNameHeader";
             this.tableNameHeader.Size = new System.Drawing.Size(150, 55);
@@ -400,15 +401,15 @@
             this.viewGrid.BackgroundColor = System.Drawing.Color.White;
             this.viewGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.viewGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.viewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -419,15 +420,15 @@
             this.CAR_ID,
             this.arrival,
             this.departure});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewGrid.DefaultCellStyle = dataGridViewCellStyle4;
             this.viewGrid.EnableHeadersVisualStyles = false;
             this.viewGrid.GridColor = System.Drawing.Color.White;
             this.viewGrid.Location = new System.Drawing.Point(201, 272);
@@ -507,7 +508,7 @@
             this.panel8.Location = new System.Drawing.Point(615, 712);
             this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(146, 94);
+            this.panel8.Size = new System.Drawing.Size(146, 108);
             this.panel8.TabIndex = 50;
             // 
             // pictureBox6
@@ -518,7 +519,7 @@
             this.pictureBox6.Location = new System.Drawing.Point(27, 5);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(87, 48);
+            this.pictureBox6.Size = new System.Drawing.Size(87, 59);
             this.pictureBox6.TabIndex = 29;
             this.pictureBox6.TabStop = false;
             // 
@@ -529,7 +530,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(22, 57);
+            this.label7.Location = new System.Drawing.Point(22, 69);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 27);
@@ -547,7 +548,7 @@
             this.panel6.Location = new System.Drawing.Point(903, 712);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(140, 94);
+            this.panel6.Size = new System.Drawing.Size(140, 108);
             this.panel6.TabIndex = 51;
             // 
             // pictureBox7
@@ -558,7 +559,7 @@
             this.pictureBox7.Location = new System.Drawing.Point(27, 5);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(87, 48);
+            this.pictureBox7.Size = new System.Drawing.Size(87, 59);
             this.pictureBox7.TabIndex = 29;
             this.pictureBox7.TabStop = false;
             // 
@@ -569,7 +570,7 @@
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(22, 57);
+            this.deleteButton.Location = new System.Drawing.Point(23, 69);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(91, 27);
@@ -587,7 +588,7 @@
             this.panel9.Location = new System.Drawing.Point(760, 712);
             this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(146, 94);
+            this.panel9.Size = new System.Drawing.Size(146, 108);
             this.panel9.TabIndex = 51;
             // 
             // pictureBox8
@@ -598,7 +599,7 @@
             this.pictureBox8.Location = new System.Drawing.Point(27, 5);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(87, 48);
+            this.pictureBox8.Size = new System.Drawing.Size(87, 59);
             this.pictureBox8.TabIndex = 29;
             this.pictureBox8.TabStop = false;
             // 
@@ -609,7 +610,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(22, 57);
+            this.label9.Location = new System.Drawing.Point(22, 69);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 27);
@@ -629,7 +630,7 @@
             this.deletePanel.Controls.Add(this.deleteIDTextBox);
             this.deletePanel.Location = new System.Drawing.Point(202, 208);
             this.deletePanel.Name = "deletePanel";
-            this.deletePanel.Size = new System.Drawing.Size(1318, 58);
+            this.deletePanel.Size = new System.Drawing.Size(1319, 58);
             this.deletePanel.TabIndex = 53;
             // 
             // selectAttribute
@@ -692,8 +693,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1593, 875);
+            this.ClientSize = new System.Drawing.Size(1525, 830);
             this.Controls.Add(this.deletePanel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel9);
