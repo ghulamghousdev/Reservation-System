@@ -55,11 +55,12 @@ namespace AirlineReservationSystem
                 viewGrid.Columns[0].Visible = true;
                 viewGrid.Columns[1].Visible = true;
                 viewGrid.Columns[2].Visible = true;
-                viewGrid.Columns[4].Visible = true;
+                viewGrid.Columns[3].Visible = true;
                 viewGrid.Columns[0].HeaderText = "Airport_ID";
                 viewGrid.Columns[1].HeaderText = "Airport_Name";
                 viewGrid.Columns[2].HeaderText = "City";
-                viewGrid.Columns[4].HeaderText = "Country";
+                viewGrid.Columns[3].HeaderText = "Country";
+                viewGrid.Columns[4].Visible = false;
                 viewGrid.Columns[5].Visible = false;
                 viewGrid.Columns[6].Visible = false;
                 viewGrid.Columns[7].Visible = false;
