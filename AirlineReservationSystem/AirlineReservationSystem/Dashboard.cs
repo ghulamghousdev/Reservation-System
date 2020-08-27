@@ -417,6 +417,15 @@ namespace AirlineReservationSystem
             this.deleteButtonCon.Text = "Update";
             flagForDeleteUpdate = "Update";
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            if (flag == "AIRPORT")
+            {
+                new Form1().Show();
+                this.Hide();
+            }
+        }
     }
 }
 
