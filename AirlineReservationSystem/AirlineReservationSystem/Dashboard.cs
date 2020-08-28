@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,17 +30,12 @@ namespace AirlineReservationSystem
             this.deleteButtonCon.Visible = false;
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-
 
 
         private void viewCarGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -49,6 +45,7 @@ namespace AirlineReservationSystem
 
         private void populateGrid()
         {
+            tableNameHeader.Text = flag;
             if (flag == "AIRPORT")
             {
                 con.Open();
@@ -205,6 +202,8 @@ namespace AirlineReservationSystem
                     string d_d = ds.Tables[0].Rows[i].ItemArray[6].ToString(); 
                     string a_d = ds.Tables[0].Rows[i].ItemArray[7].ToString();
 
+
+
                     DataGridViewRow dataPush = new DataGridViewRow();
                     dataPush.CreateCells(viewGrid);
                     dataPush.Cells[0].Value = f_id;
@@ -237,7 +236,7 @@ namespace AirlineReservationSystem
         public void airline()
         {
             flag = "AIRLINE";
-            tableNameHeader.Text = "Airport";
+            tableNameHeader.Text = "Airline";
             populateGrid();
             setID();
         }
@@ -424,6 +423,21 @@ namespace AirlineReservationSystem
             if (flag == "AIRPORT")
             {
                 new Form1().Show();
+                this.Hide();
+            }
+            else if(flag== "AIRLINE")
+            {
+                new Form2().Show();
+                this.Hide();
+            }
+            else if (flag == "AIRPLANE")
+            {
+                new Form3().Show();
+                this.Hide();
+            }
+            else  if (flag == "FLIGHT")
+            {
+                new Form4().Show();
                 this.Hide();
             }
         }

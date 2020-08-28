@@ -79,9 +79,9 @@
             this.deletePanel.Controls.Add(this.label1);
             this.deletePanel.Controls.Add(this.deletePromptLabel);
             this.deletePanel.Controls.Add(this.deleteButtonCon);
-            this.deletePanel.Location = new System.Drawing.Point(202, 208);
+            this.deletePanel.Location = new System.Drawing.Point(195, 208);
             this.deletePanel.Name = "deletePanel";
-            this.deletePanel.Size = new System.Drawing.Size(1318, 632);
+            this.deletePanel.Size = new System.Drawing.Size(1325, 632);
             this.deletePanel.TabIndex = 63;
             // 
             // label9
@@ -100,7 +100,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 8F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(601, 302);
+            this.label8.Location = new System.Drawing.Point(601, 304);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(174, 18);
             this.label8.TabIndex = 87;

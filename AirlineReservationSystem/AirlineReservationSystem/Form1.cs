@@ -30,7 +30,7 @@ namespace AirlineReservationSystem
             string A_Country = country.Text;
 
             con.Open();
-            string firstQuery = "INSERT INTO AIRPORT(Airport_ID, Airport_Name, City, Country) values(@name, @id, @city, @country)";
+            string firstQuery = "INSERT INTO AIRPORT(Airport_ID, Airport_Name, City, Country) values(@id, @name, @city, @country)";
             SqlCommand cmd = new SqlCommand(firstQuery, con);
             cmd.Parameters.AddWithValue("@name", A_Name);
             cmd.Parameters.AddWithValue("@id", A_ID);
