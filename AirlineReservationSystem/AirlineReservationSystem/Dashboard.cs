@@ -332,11 +332,22 @@ namespace AirlineReservationSystem
                     cmd4.Parameters.AddWithValue("@aa1", found);
                     cmd4.ExecuteNonQuery();
                 }
-                MessageBox.Show("Deleted");
-                SqlCommand cmd = new SqlCommand("delete from " + flag + " where " + id + "=@a", con);
-                cmd.Parameters.AddWithValue("@a", valueTo);
-                cmd.ExecuteNonQuery();
+
             }
+            else if (flag == "AIRPLANE")
+            {
+
+                SqlCommand cmd3 = new SqlCommand("delete from  FLIGHT  where Airplane_ID=@aaa", con);
+                cmd3.Parameters.AddWithValue("@aaa", valueTo);
+                cmd3.ExecuteNonQuery();
+                SqlCommand cmd9 = new SqlCommand("delete from AIRPLANE where " + id + "=@a", con);
+                cmd9.Parameters.AddWithValue("@a", valueTo);
+                cmd9.ExecuteNonQuery();
+            }
+            
+            SqlCommand cmdd = new SqlCommand("delete from " + flag + " where " + id + "=@a", con);
+            cmdd.Parameters.AddWithValue("@a", valueTo);
+            cmdd.ExecuteNonQuery();
             MessageBox.Show("Deleted");
             con.Close();
             populateGrid();
