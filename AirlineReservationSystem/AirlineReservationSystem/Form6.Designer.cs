@@ -37,16 +37,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.firstNameBox = new System.Windows.Forms.TextBox();
+            this.lastNameBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.adminBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.contactBox = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -60,6 +60,7 @@
             this.button1.TabIndex = 63;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label3
             // 
@@ -152,21 +153,21 @@
             this.label5.TabIndex = 66;
             this.label5.Text = "First Name";
             // 
-            // textBox1
+            // firstNameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(523, 187);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 20);
-            this.textBox1.TabIndex = 65;
+            this.firstNameBox.Location = new System.Drawing.Point(523, 187);
+            this.firstNameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstNameBox.Name = "firstNameBox";
+            this.firstNameBox.Size = new System.Drawing.Size(189, 20);
+            this.firstNameBox.TabIndex = 65;
             // 
-            // textBox2
+            // lastNameBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(523, 247);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 20);
-            this.textBox2.TabIndex = 64;
+            this.lastNameBox.Location = new System.Drawing.Point(523, 247);
+            this.lastNameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(189, 20);
+            this.lastNameBox.TabIndex = 64;
             // 
             // label6
             // 
@@ -192,21 +193,21 @@
             this.label7.TabIndex = 74;
             this.label7.Text = "Email";
             // 
-            // textBox3
+            // emailBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(523, 311);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 20);
-            this.textBox3.TabIndex = 73;
+            this.emailBox.Location = new System.Drawing.Point(523, 311);
+            this.emailBox.Margin = new System.Windows.Forms.Padding(2);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(189, 20);
+            this.emailBox.TabIndex = 73;
             // 
-            // textBox4
+            // adminBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(523, 371);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 20);
-            this.textBox4.TabIndex = 72;
+            this.adminBox.Location = new System.Drawing.Point(523, 371);
+            this.adminBox.Margin = new System.Windows.Forms.Padding(2);
+            this.adminBox.Name = "adminBox";
+            this.adminBox.Size = new System.Drawing.Size(189, 20);
+            this.adminBox.TabIndex = 72;
             // 
             // label8
             // 
@@ -232,21 +233,21 @@
             this.label9.TabIndex = 70;
             this.label9.Text = "Contact";
             // 
-            // textBox5
+            // contactBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(137, 309);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 20);
-            this.textBox5.TabIndex = 69;
+            this.contactBox.Location = new System.Drawing.Point(137, 309);
+            this.contactBox.Margin = new System.Windows.Forms.Padding(2);
+            this.contactBox.Name = "contactBox";
+            this.contactBox.Size = new System.Drawing.Size(189, 20);
+            this.contactBox.TabIndex = 69;
             // 
-            // textBox6
+            // addressBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(137, 369);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(189, 20);
-            this.textBox6.TabIndex = 68;
+            this.addressBox.Location = new System.Drawing.Point(137, 369);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(189, 20);
+            this.addressBox.TabIndex = 68;
             // 
             // Form6
             // 
@@ -256,16 +257,16 @@
             this.ClientSize = new System.Drawing.Size(744, 512);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.emailBox);
+            this.Controls.Add(this.adminBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.contactBox);
+            this.Controls.Add(this.addressBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.firstNameBox);
+            this.Controls.Add(this.lastNameBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -292,15 +293,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox firstNameBox;
+        private System.Windows.Forms.TextBox lastNameBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox adminBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox contactBox;
+        private System.Windows.Forms.TextBox addressBox;
     }
 }
