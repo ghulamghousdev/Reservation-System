@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,19 @@ namespace AirlineReservationSystem
 {
     public partial class Form6 : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-UUG2AVV;Initial Catalog=AirlineReservationSystem;Integrated Security=True");
+
         public Form6()
         {
             InitializeComponent();
         }
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             string firstName = firstNameBox.Text;
             string lastName = lastNameBox.Text;
@@ -28,23 +36,22 @@ namespace AirlineReservationSystem
             string contact = contactBox.Text;
             string address = addressBox.Text;
 
-
             con.Open();
-            string firstQuery = "INSERT INTO FLIGHT(Flight_ID, Airplane_ID, Departure_City,Arrival_City, Departure_Time, Arrival_Time, Departure_Date, Arrival_Date) values(@fi, @ai, @CF, @CT, @DT, @AT, @DD, @AD)";
+            string firstQuery = "INSERT INTO ADMIN(First_Name, Last_Name, Admin_ID, Username, Admin_Password, Email, Contact, Admin_Address ) values(@a, @b, @c, @d, @e, @f, @g, @h)";
             SqlCommand cmd = new SqlCommand(firstQuery, con);
-            cmd.Parameters.AddWithValue("@fi", F_ID);
-            cmd.Parameters.AddWithValue("@ai", A_ID);
-            cmd.Parameters.AddWithValue("@CF", F_CD);
-            cmd.Parameters.AddWithValue("@CT", F_CA);
-            cmd.Parameters.AddWithValue("@AD", DD);
-            cmd.Parameters.AddWithValue("@DD", AD);
-            cmd.Parameters.AddWithValue("@AT", arrivalTime);
-            cmd.Parameters.AddWithValue("@DT", departureTime);
+            cmd.Parameters.AddWithValue("@a", firstName);
+            cmd.Parameters.AddWithValue("@b", lastName);
+            cmd.Parameters.AddWithValue("@c", adminID);
+            cmd.Parameters.AddWithValue("@d", userName);
+            cmd.Parameters.AddWithValue("@e", password);
+            cmd.Parameters.AddWithValue("@f", email);
+            cmd.Parameters.AddWithValue("@g", contact);
+            cmd.Parameters.AddWithValue("@h", address);
             cmd.ExecuteNonQuery();
-            this.msgBox.Text = "Your Data has been saved😊";
-
-
             con.Close();
+
+            new Form5().Show();
+            this.Hide();
         }
     }
 }
