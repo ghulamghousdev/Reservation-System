@@ -37,7 +37,6 @@
             this.airlineID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.crafts = new System.Windows.Forms.TextBox();
             this.airlineName = new System.Windows.Forms.TextBox();
@@ -50,12 +49,11 @@
             this.label111 = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
             this.deletePanel = new System.Windows.Forms.Panel();
+            this.msgBox = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.msgBox = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.deletePanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -151,7 +149,6 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.pictureBox5);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Location = new System.Drawing.Point(0, 205);
@@ -159,19 +156,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(201, 220);
             this.panel7.TabIndex = 39;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Enabled = false;
-            this.pictureBox5.Location = new System.Drawing.Point(39, 55);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(106, 60);
-            this.pictureBox5.TabIndex = 29;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label6
             // 
@@ -310,6 +294,17 @@
             this.deletePanel.Size = new System.Drawing.Size(1329, 632);
             this.deletePanel.TabIndex = 69;
             // 
+            // msgBox
+            // 
+            this.msgBox.AutoSize = true;
+            this.msgBox.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.msgBox.ForeColor = System.Drawing.Color.White;
+            this.msgBox.Location = new System.Drawing.Point(430, 513);
+            this.msgBox.Name = "msgBox";
+            this.msgBox.Size = new System.Drawing.Size(372, 27);
+            this.msgBox.TabIndex = 88;
+            this.msgBox.Text = "\"Your Data has been saved😊\"";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -334,17 +329,6 @@
             this.panel2.Size = new System.Drawing.Size(1320, 128);
             this.panel2.TabIndex = 65;
             // 
-            // msgBox
-            // 
-            this.msgBox.AutoSize = true;
-            this.msgBox.Font = new System.Drawing.Font("Lucida Fax", 12F);
-            this.msgBox.ForeColor = System.Drawing.Color.White;
-            this.msgBox.Location = new System.Drawing.Point(430, 513);
-            this.msgBox.Name = "msgBox";
-            this.msgBox.Size = new System.Drawing.Size(372, 27);
-            this.msgBox.TabIndex = 88;
-            this.msgBox.Text = "\"Your Data has been saved😊\"";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -368,7 +352,6 @@
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.deletePanel.ResumeLayout(false);
             this.deletePanel.PerformLayout();
@@ -389,7 +372,6 @@
         private System.Windows.Forms.TextBox airlineID;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox crafts;
         private System.Windows.Forms.TextBox airlineName;
