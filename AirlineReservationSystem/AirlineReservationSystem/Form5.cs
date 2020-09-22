@@ -34,7 +34,7 @@ namespace AirlineReservationSystem
             user = namBox.Text;
             pass = passBox.Text;
 
-            string logQuery = "select * from ADMIN_CREDIENTIALS where Username = @id and  Password= @pin";
+            string logQuery = "select * from ADMIN where Username = @id and  Admin_Password= @pin";
 
             SqlCommand logCmd = new SqlCommand(logQuery, con);
             logCmd.Parameters.AddWithValue("@id", user);
@@ -62,6 +62,12 @@ namespace AirlineReservationSystem
         private void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        { 
+            new Form6().Show();
+            this.Hide();
         }
     }
 }
