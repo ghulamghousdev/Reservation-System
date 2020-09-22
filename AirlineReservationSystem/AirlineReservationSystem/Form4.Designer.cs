@@ -37,7 +37,6 @@
             this.backBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.exitBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,29 +49,28 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.deletePanel = new System.Windows.Forms.Panel();
+            this.DM = new System.Windows.Forms.TextBox();
+            this.DH = new System.Windows.Forms.TextBox();
+            this.AM = new System.Windows.Forms.TextBox();
+            this.AH = new System.Windows.Forms.TextBox();
+            this.dateA = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dateD = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.h = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fromCity = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.flightID = new System.Windows.Forms.TextBox();
             this.label111 = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.fromCity = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.h = new System.Windows.Forms.Label();
-            this.dateD = new System.Windows.Forms.DateTimePicker();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.dateA = new System.Windows.Forms.DateTimePicker();
-            this.AH = new System.Windows.Forms.TextBox();
-            this.AM = new System.Windows.Forms.TextBox();
-            this.DM = new System.Windows.Forms.TextBox();
-            this.DH = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.deletePanel.SuspendLayout();
@@ -163,7 +161,6 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.pictureBox5);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Location = new System.Drawing.Point(0, 205);
@@ -171,19 +168,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(201, 220);
             this.panel7.TabIndex = 39;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Enabled = false;
-            this.pictureBox5.Location = new System.Drawing.Point(39, 55);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(106, 60);
-            this.pictureBox5.TabIndex = 29;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label6
             // 
@@ -354,6 +338,167 @@
             this.deletePanel.Size = new System.Drawing.Size(1329, 632);
             this.deletePanel.TabIndex = 81;
             // 
+            // DM
+            // 
+            this.DM.Location = new System.Drawing.Point(1036, 202);
+            this.DM.Name = "DM";
+            this.DM.Size = new System.Drawing.Size(55, 26);
+            this.DM.TabIndex = 127;
+            // 
+            // DH
+            // 
+            this.DH.Location = new System.Drawing.Point(906, 200);
+            this.DH.Name = "DH";
+            this.DH.Size = new System.Drawing.Size(55, 26);
+            this.DH.TabIndex = 126;
+            // 
+            // AM
+            // 
+            this.AM.Location = new System.Drawing.Point(1036, 123);
+            this.AM.Name = "AM";
+            this.AM.Size = new System.Drawing.Size(55, 26);
+            this.AM.TabIndex = 125;
+            // 
+            // AH
+            // 
+            this.AH.Location = new System.Drawing.Point(906, 121);
+            this.AH.Name = "AH";
+            this.AH.Size = new System.Drawing.Size(55, 26);
+            this.AH.TabIndex = 124;
+            // 
+            // dateA
+            // 
+            this.dateA.CustomFormat = "dd-MM-yyyy";
+            this.dateA.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateA.Location = new System.Drawing.Point(906, 366);
+            this.dateA.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.dateA.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateA.Name = "dateA";
+            this.dateA.Size = new System.Drawing.Size(146, 26);
+            this.dateA.TabIndex = 123;
+            this.dateA.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(694, 363);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(158, 27);
+            this.label14.TabIndex = 122;
+            this.label14.Text = "Arrival Date";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(694, 282);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(200, 27);
+            this.label17.TabIndex = 121;
+            this.label17.Text = "Departure Date";
+            // 
+            // dateD
+            // 
+            this.dateD.CustomFormat = "dd-MM-yyyy";
+            this.dateD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateD.Location = new System.Drawing.Point(906, 287);
+            this.dateD.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.dateD.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateD.Name = "dateD";
+            this.dateD.Size = new System.Drawing.Size(146, 26);
+            this.dateD.TabIndex = 118;
+            this.dateD.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 8F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1042, 236);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 18);
+            this.label1.TabIndex = 117;
+            this.label1.Text = "Min";
+            // 
+            // h
+            // 
+            this.h.AutoSize = true;
+            this.h.Font = new System.Drawing.Font("Lucida Fax", 8F);
+            this.h.ForeColor = System.Drawing.Color.White;
+            this.h.Location = new System.Drawing.Point(919, 234);
+            this.h.Name = "h";
+            this.h.Size = new System.Drawing.Size(34, 18);
+            this.h.TabIndex = 114;
+            this.h.Text = "HH";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Lucida Fax", 8F);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(1042, 152);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(38, 18);
+            this.label19.TabIndex = 113;
+            this.label19.Text = "Min";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lucida Fax", 8F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(240, 316);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(233, 18);
+            this.label8.TabIndex = 109;
+            this.label8.Text = "*Select from above options*";
+            // 
+            // fromCity
+            // 
+            this.fromCity.FormattingEnabled = true;
+            this.fromCity.Items.AddRange(new object[] {
+            "AirlineID"});
+            this.fromCity.Location = new System.Drawing.Point(243, 285);
+            this.fromCity.Name = "fromCity";
+            this.fromCity.Size = new System.Drawing.Size(288, 28);
+            this.fromCity.TabIndex = 108;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Fax", 8F);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(919, 153);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(34, 18);
+            this.label15.TabIndex = 105;
+            this.label15.Text = "HH";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(694, 202);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(163, 27);
+            this.label16.TabIndex = 101;
+            this.label16.Text = "Arrival Time";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Lucida Fax", 12F);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(694, 121);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(205, 27);
+            this.label18.TabIndex = 99;
+            this.label18.Text = "Departure Time";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -395,167 +540,6 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Lucida Fax", 8F);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(919, 153);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 18);
-            this.label15.TabIndex = 105;
-            this.label15.Text = "HH";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Lucida Fax", 12F);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(694, 202);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(163, 27);
-            this.label16.TabIndex = 101;
-            this.label16.Text = "Arrival Time";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Lucida Fax", 12F);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(694, 121);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(205, 27);
-            this.label18.TabIndex = 99;
-            this.label18.Text = "Departure Time";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Fax", 8F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(240, 316);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(233, 18);
-            this.label8.TabIndex = 109;
-            this.label8.Text = "*Select from above options*";
-            // 
-            // fromCity
-            // 
-            this.fromCity.FormattingEnabled = true;
-            this.fromCity.Items.AddRange(new object[] {
-            "AirlineID"});
-            this.fromCity.Location = new System.Drawing.Point(243, 285);
-            this.fromCity.Name = "fromCity";
-            this.fromCity.Size = new System.Drawing.Size(288, 28);
-            this.fromCity.TabIndex = 108;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Lucida Fax", 8F);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(1042, 152);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(38, 18);
-            this.label19.TabIndex = 113;
-            this.label19.Text = "Min";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 8F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1042, 236);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 18);
-            this.label1.TabIndex = 117;
-            this.label1.Text = "Min";
-            // 
-            // h
-            // 
-            this.h.AutoSize = true;
-            this.h.Font = new System.Drawing.Font("Lucida Fax", 8F);
-            this.h.ForeColor = System.Drawing.Color.White;
-            this.h.Location = new System.Drawing.Point(919, 234);
-            this.h.Name = "h";
-            this.h.Size = new System.Drawing.Size(34, 18);
-            this.h.TabIndex = 114;
-            this.h.Text = "HH";
-            // 
-            // dateD
-            // 
-            this.dateD.CustomFormat = "dd-MM-yyyy";
-            this.dateD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateD.Location = new System.Drawing.Point(906, 287);
-            this.dateD.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
-            this.dateD.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.dateD.Name = "dateD";
-            this.dateD.Size = new System.Drawing.Size(146, 26);
-            this.dateD.TabIndex = 118;
-            this.dateD.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Fax", 12F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(694, 363);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(158, 27);
-            this.label14.TabIndex = 122;
-            this.label14.Text = "Arrival Date";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Lucida Fax", 12F);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(694, 282);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(200, 27);
-            this.label17.TabIndex = 121;
-            this.label17.Text = "Departure Date";
-            // 
-            // dateA
-            // 
-            this.dateA.CustomFormat = "dd-MM-yyyy";
-            this.dateA.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateA.Location = new System.Drawing.Point(906, 366);
-            this.dateA.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
-            this.dateA.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.dateA.Name = "dateA";
-            this.dateA.Size = new System.Drawing.Size(146, 26);
-            this.dateA.TabIndex = 123;
-            this.dateA.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            // 
-            // AH
-            // 
-            this.AH.Location = new System.Drawing.Point(906, 121);
-            this.AH.Name = "AH";
-            this.AH.Size = new System.Drawing.Size(55, 26);
-            this.AH.TabIndex = 124;
-            // 
-            // AM
-            // 
-            this.AM.Location = new System.Drawing.Point(1036, 123);
-            this.AM.Name = "AM";
-            this.AM.Size = new System.Drawing.Size(55, 26);
-            this.AM.TabIndex = 125;
-            // 
-            // DM
-            // 
-            this.DM.Location = new System.Drawing.Point(1036, 202);
-            this.DM.Name = "DM";
-            this.DM.Size = new System.Drawing.Size(55, 26);
-            this.DM.TabIndex = 127;
-            // 
-            // DH
-            // 
-            this.DH.Location = new System.Drawing.Point(906, 200);
-            this.DH.Name = "DH";
-            this.DH.Size = new System.Drawing.Size(55, 26);
-            this.DH.TabIndex = 126;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -578,7 +562,6 @@
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -598,7 +581,6 @@
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Panel panel2;
